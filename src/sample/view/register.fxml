@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: darkblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.RegisterController">
+    <children>
+        <AnchorPane layoutX="1.0" layoutY="104.0" prefHeight="296.0" prefWidth="700.0" style="-fx-background-color: aliceblue;">
+            <children>
+                <Button fx:id="registerRegisterButton" layoutX="63.0" layoutY="206.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="140.0" style="-fx-background-color: lightblue;" text="REGISTER">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="registerViewButton" layoutX="280.0" layoutY="206.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="140.0" style="-fx-background-color: lightblue;" text="VIEW">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="registerExitButton" layoutX="488.0" layoutY="206.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="140.0" style="-fx-background-color: lightblue;" text="EXIT">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+            <TextField fx:id="registerNumeTField" layoutX="154.0" layoutY="14.0" prefHeight="31.0" prefWidth="474.0" />
+            <TextField fx:id="registerPrenumeTField" layoutX="154.0" layoutY="59.0" prefHeight="31.0" prefWidth="474.0" />
+            <TextField fx:id="registerVarstaTField" layoutX="154.0" layoutY="102.0" prefHeight="31.0" prefWidth="474.0" />
+            <Label layoutX="36.0" layoutY="15.0" prefHeight="21.0" prefWidth="91.0" text="Nume">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="60.0" prefHeight="21.0" prefWidth="91.0" text="Prenume">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="103.0" prefHeight="21.0" prefWidth="91.0" text="Varsta">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="registerMateriaCBox" layoutX="154.0" layoutY="148.0" prefHeight="31.0" prefWidth="474.0" />
+            <Label layoutX="36.0" layoutY="149.0" prefHeight="21.0" prefWidth="91.0" text="Materia">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+        <Label layoutX="72.0" layoutY="29.0" prefHeight="21.0" prefWidth="557.0" text="Student Registration System" textFill="#fbfbfb">
+            <font>
+                <Font name="System Bold" size="40.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: darkblue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.ViewController">
+    <children>
+        <AnchorPane layoutX="1.0" layoutY="104.0" prefHeight="296.0" prefWidth="700.0" style="-fx-background-color: aliceblue;">
+            <children>
+                <Button fx:id="welcomeRegisterButton" layoutX="65.0" layoutY="206.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="140.0" style="-fx-background-color: lightblue;" text="REGISTER">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="welcomeViewButton" layoutX="280.0" layoutY="206.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="140.0" style="-fx-background-color: lightblue;" text="VIEW">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="welcomeExitButton" layoutX="488.0" layoutY="206.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="140.0" style="-fx-background-color: lightblue;" text="EXIT">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <Label layoutX="72.0" layoutY="29.0" prefHeight="21.0" prefWidth="557.0" text="Student Registration System" textFill="#fbfbfb">
+            <font>
+                <Font name="System Bold" size="40.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
+
