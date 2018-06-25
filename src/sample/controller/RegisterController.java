@@ -44,6 +44,7 @@ public class RegisterController {
     @FXML
     private TextField registerNumeTField;
 
+    
     @FXML
     void initialize() {
         registerRegisterButton.setOnAction(event -> {
