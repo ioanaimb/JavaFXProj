@@ -40,20 +40,31 @@ public class WelcomeController {
                 e.printStackTrace();
             }
         });
-        welcomeViewButton.setOnAction(e -> {
-            System.out.println("Butonul VIEW a fost apasat!");
+        welcomeViewButton.setOnAction(event -> {
+            try {
+                viewScreenButtonPushed(event);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         });
         welcomeExitButton.setOnAction(e -> {
-            System.out.println("Butonul EXIT a fost apasat!");
             Platform.exit();
         });
     }
 
     public void registerScreenButtonPushed(ActionEvent event) throws IOException {
         Parent registerParent = FXMLLoader.load(getClass().getResource("../view/register.fxml"));
-        Scene registerScene = new Scene(registerParent,700,450);
-        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        Scene registerScene = new Scene(registerParent, 700, 450);
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         window.setScene(registerScene);
+        window.show();
+    }
+
+    public void viewScreenButtonPushed(ActionEvent event) throws IOException {
+        Parent viewParent = FXMLLoader.load(getClass().getResource("../view/view.fxml"));
+        Scene viewScene = new Scene(viewParent, 700, 450);
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setScene(viewScene);
         window.show();
     }
 }
